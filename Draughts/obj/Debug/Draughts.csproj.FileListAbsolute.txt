@@ -1,0 +1,9 @@
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\bin\Debug\Draughts.exe.config
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\bin\Debug\Draughts.exe
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\bin\Debug\Draughts.pdb
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.csproj.AssemblyReference.cache
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.Properties.Resources.resources
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.csproj.GenerateResource.cache
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.csproj.CoreCompileInputs.cache
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.exe
+\\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.pdb
