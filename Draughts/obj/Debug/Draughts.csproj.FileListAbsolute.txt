@@ -7,3 +7,9 @@
 \\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.csproj.CoreCompileInputs.cache
 \\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.exe
 \\vs-fstud\Folders\2018\18MEvans\Profile\1A Level Computer Science\Unit 2\draughts\Draughts\Draughts\obj\Debug\Draughts.pdb
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\Draughts.csproj.AssemblyReference.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\Draughts.Properties.Resources.resources
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\Draughts.csproj.GenerateResource.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\Draughts.csproj.CoreCompileInputs.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\Draughts.exe
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\Draughts.pdb
