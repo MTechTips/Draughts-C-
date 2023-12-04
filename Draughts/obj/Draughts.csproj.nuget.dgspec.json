@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Miles Evans\\source\\repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj": {}
+    "C:\\Users\\Miles Evans\\Source\\Repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Miles Evans\\source\\repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj": {
+    "C:\\Users\\Miles Evans\\Source\\Repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Miles Evans\\source\\repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj",
+        "projectUniqueName": "C:\\Users\\Miles Evans\\Source\\Repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj",
         "projectName": "Draughts",
-        "projectPath": "C:\\Users\\Miles Evans\\source\\repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj",
+        "projectPath": "C:\\Users\\Miles Evans\\Source\\Repos\\MTechTips\\Draughts-C-\\Draughts\\Draughts.csproj",
         "packagesPath": "C:\\Users\\Miles Evans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Miles Evans\\source\\repos\\MTechTips\\Draughts-C-\\Draughts\\obj\\",
+        "outputPath": "C:\\Users\\Miles Evans\\Source\\Repos\\MTechTips\\Draughts-C-\\Draughts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

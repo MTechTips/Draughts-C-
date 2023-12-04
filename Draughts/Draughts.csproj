@@ -9,6 +9,11 @@
 
 	<ItemGroup>
 		<!-- Explicitly include only the necessary files -->
+		<Compile Include="Game.cs" />
+		<Compile Include="UI.cs" />
+		<Compile Include="Board.cs" />
+		<Compile Include="Piece.cs" />
+		<Compile Include="Player.cs" />
 		<Compile Include="Program.cs" />
 		<!-- Add other necessary files -->
 	</ItemGroup>

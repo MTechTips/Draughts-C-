@@ -1,4 +1,6 @@
-﻿public class Player
+﻿using System.Collections.Generic;
+
+public class Player
 {
     public string Name { get; }
     public PieceColor Color { get; }

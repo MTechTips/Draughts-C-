@@ -1,4 +1,6 @@
-﻿public class Game
+﻿using System;
+
+public class Game
 {
     public Board Board { get; private set; }
     public Player CurrentPlayer { get; private set; }
@@ -57,7 +59,7 @@
         Board.DisplayBoard();
     }
 
-    private bool MakeMove(string move)
+    public bool MakeMove(string move)
     {
         // Implement move validation and update board
         // Return true if the move is valid, otherwise false

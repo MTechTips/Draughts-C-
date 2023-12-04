@@ -4,7 +4,7 @@
     King
 }
 
-public class Piece
+public class Pieces
 {
     public PieceColor Color { get; set; }
     public PieceType Type { get; set; }
@@ -12,7 +12,7 @@ public class Piece
     // Additional properties for king status
     public bool IsKing => Type == PieceType.King;
 
-    public Piece(PieceColor color, PieceType type = PieceType.Regular)
+    public Pieces(PieceColor color, PieceType type = PieceType.Regular)
     {
         Color = color;
         Type = type;

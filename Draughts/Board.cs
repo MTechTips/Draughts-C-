@@ -91,4 +91,9 @@ public class Board
         // For simplicity, allow any move for now
         return true;
     }
+
+    internal bool MakeMove(string move, PieceColor color)
+    {
+        throw new NotImplementedException();
+    }
 }

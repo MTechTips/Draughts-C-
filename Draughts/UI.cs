@@ -1,4 +1,6 @@
-﻿public class UI
+﻿using System;
+
+public class UI
 {
     private Game game;
 
