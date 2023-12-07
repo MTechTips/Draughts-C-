@@ -6,3 +6,16 @@ C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.
 C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.AssemblyInfo.cs
 C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.csproj.CoreCompileInputs.cache
 C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.sourcelink.json
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.Properties.Resources.resources
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.AssemblyInfo.cs
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.sourcelink.json
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\bin\Debug\net4.8.0\Draughts.exe.config
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\bin\Debug\net4.8.0\Draughts.exe
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\bin\Debug\net4.8.0\Draughts.pdb
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.exe
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\Draughts\obj\Debug\net4.8.0\Draughts.pdb

@@ -4,7 +4,7 @@ public class Game
 {
     public Board Board { get; private set; }
     public Player CurrentPlayer { get; private set; }
-    public bool IsGameOver { get; private set; }
+    public bool IsGameOver { get; set; }
     public Player Winner { get; private set; }
 
     public Game()
@@ -66,7 +66,7 @@ public class Game
         return Board.MakeMove(move, CurrentPlayer.Color);
     }
 
-    private void SwitchPlayers()
+    public void SwitchPlayers()
     {
         CurrentPlayer = CurrentPlayer.Opponent;
     }
