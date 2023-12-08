@@ -12,7 +12,7 @@ public class UI
     public void RunGame()
     {
         Console.WriteLine("Welcome to Checkers!");
-
+        Console.WriteLine("Copyright MilesTechTips 2023")
         while (!game.IsGameOver)
         {
             DisplayBoard();

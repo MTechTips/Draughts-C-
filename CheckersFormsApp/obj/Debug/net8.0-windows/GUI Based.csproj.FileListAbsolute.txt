@@ -1,0 +1,17 @@
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\bin\Debug\net8.0-windows\GUI Based.exe
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\bin\Debug\net8.0-windows\GUI Based.deps.json
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\bin\Debug\net8.0-windows\GUI Based.runtimeconfig.json
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\bin\Debug\net8.0-windows\GUI Based.dll
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\bin\Debug\net8.0-windows\GUI Based.pdb
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI_Based.Form1.resources
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.AssemblyInfo.cs
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.sourcelink.json
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.dll
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\refint\GUI Based.dll
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.pdb
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\GUI Based.genruntimeconfig.cache
+C:\Users\User\Source\Repos\MTechTips\Draughts-C-\GUI Based\obj\Debug\net8.0-windows\ref\GUI Based.dll
