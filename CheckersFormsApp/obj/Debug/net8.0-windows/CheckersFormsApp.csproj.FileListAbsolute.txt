@@ -15,3 +15,20 @@ C:\Users\User\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8
 C:\Users\User\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.pdb
 C:\Users\User\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.genruntimeconfig.cache
 C:\Users\User\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\ref\CheckersFormsApp.dll
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\bin\Debug\net8.0-windows\CheckersFormsApp.exe
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\bin\Debug\net8.0-windows\CheckersFormsApp.deps.json
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\bin\Debug\net8.0-windows\CheckersFormsApp.runtimeconfig.json
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\bin\Debug\net8.0-windows\CheckersFormsApp.dll
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\bin\Debug\net8.0-windows\CheckersFormsApp.pdb
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.Form1.resources
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.csproj.GenerateResource.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.AssemblyInfoInputs.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.AssemblyInfo.cs
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.sourcelink.json
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.dll
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\refint\CheckersFormsApp.dll
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.pdb
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\CheckersFormsApp.genruntimeconfig.cache
+C:\Users\Miles Evans\Source\Repos\MTechTips\Draughts-C-\CheckersFormsApp\obj\Debug\net8.0-windows\ref\CheckersFormsApp.dll

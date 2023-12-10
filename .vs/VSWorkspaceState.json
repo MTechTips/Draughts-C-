@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CheckersFormsApp",
     "\\Draughts"
   ],
-  "SelectedNode": "\\Draughts\\Board.cs",
+  "SelectedNode": "\\CheckersFormsApp\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
