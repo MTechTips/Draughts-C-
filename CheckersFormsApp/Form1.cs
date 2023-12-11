@@ -5,11 +5,18 @@ using System.Windows.Forms;
 
 namespace CheckersFormsApp
 {
+    public enum Player
+    {
+        X,
+        O
+    }
     public partial class Form1 : Form
     {
         private int selectedRow = -1;
         private int selectedCol = -1;
-
+        private Player CurrentPlayer = Player.X;
+        private const int ButtonSize = 40;
+        private const int BoardSize = 8;
         private CheckersGame checkersGame;
         private List<List<string>> Board;
 
@@ -90,13 +97,20 @@ namespace CheckersFormsApp
         private void HandleButtonClick(int row, int col)
         {
             // Assuming Board is a List<List<string>> or similar
-            Console.WriteLine($"Button clicked: Row {row}, Col {col}");
+            MessageBox.Show($"Button clicked: Row {row}, Col {col}", "Your Move");
 
             if (selectedRow == -1 && selectedCol == -1)
             {
-                // First click, store the selected position
-                selectedRow = row;
-                selectedCol = col;
+                if (IsValidPieceToSelect(row, col))
+                {
+                    selectedRow = row;
+                    selectedCol = col;
+                    Console.WriteLine($"Piece selected: Row {selectedRow}, Col {selectedCol}");
+                }
+                else
+                {
+                    MessageBox.Show("Invalid piece to select!", "Error");
+                }
             }
             else
             {
@@ -108,7 +122,25 @@ namespace CheckersFormsApp
                 selectedCol = -1;
             }
         }
+        private bool IsValidPieceToSelect(int row, int col)
+        {
+            // Check if the position is within the board bounds
+            if (row < 0 || row >= BoardSize || col < 0 || col >= BoardSize)
+            {
+                return false;
+            }
 
+            // Check if the position has a non-empty piece that belongs to the current player
+            string piece = Board[row][col];
+
+            // Assuming "X" and "O" represent the two players
+            if ((piece == "X" && CurrentPlayer == Player.X) || (piece == "O" && CurrentPlayer == Player.O))
+            {
+                return true;
+            }
+
+            return false;
+        }
         private bool IsValidMove(int fromRow, int fromCol, int toRow, int toCol, string piece)
         {
             // Check if the destination is within the board bounds

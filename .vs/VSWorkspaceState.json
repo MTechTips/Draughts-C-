@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\CheckersFormsApp",
-    "\\Draughts"
+    "\\CheckersFormsApp\\obj",
+    "\\Draughts",
+    "\\GUI Based"
   ],
-  "SelectedNode": "\\CheckersFormsApp\\Form1.cs",
+  "SelectedNode": "\\CheckersFormsApp\\CheckersGame.cs",
   "PreviewInSolutionExplorer": false
 }
