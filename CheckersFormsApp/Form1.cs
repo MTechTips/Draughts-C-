@@ -127,6 +127,13 @@ namespace CheckersFormsApp
                 SwitchPlayers();
             }
         }
+
+        private bool IsOpponentPiece(string piece1, string piece2)
+        {
+            // Assuming "X" and "O" represent the two players
+            return (piece1 == "X" && piece2 == "O") || (piece1 == "O" && piece2 == "X");
+        }
+
         private bool IsValidPieceToSelect(int row, int col)
         {
             // Check if the position is within the board bounds
@@ -175,7 +182,8 @@ namespace CheckersFormsApp
                 int capturedCol = (toCol + fromCol) / 2;
 
                 // Check if there is an opponent's piece to capture
-                if (Board[capturedRow][capturedCol] != "X" && Board[capturedRow][capturedCol] != "O")
+                string capturedPiece = Board[capturedRow][capturedCol];
+                if (IsOpponentPiece(capturedPiece, piece))
                 {
                     // Capture move is valid
                     return true;

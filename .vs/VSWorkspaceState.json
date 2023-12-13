@@ -2,15 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\CheckersFormsApp",
-    "\\CheckersFormsApp\\obj\\Debug",
-    "\\CheckersFormsApp\\obj\\Debug\\net6.0-windows",
-    "\\CheckersFormsApp\\obj\\Debug\\net6.0-windows\\refint",
-    "\\CheckersFormsApp\\obj\\Debug\\net8.0",
-    "\\CheckersFormsApp\\obj\\Debug\\net8.0-windows",
-    "\\CheckersFormsApp\\obj\\Debug\\net8.0-windows7.0",
-    "\\CheckersFormsApp\\obj\\Debug\\net8.0\\ref",
-    "\\CheckersFormsApp\\obj\\Debug\\net8.0\\refint"
+    "\\Draughts"
   ],
-  "SelectedNode": "\\CheckersFormsApp\\obj",
+  "SelectedNode": "\\CheckersFormsApp\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
