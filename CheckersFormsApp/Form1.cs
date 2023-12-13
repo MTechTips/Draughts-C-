@@ -1,6 +1,8 @@
 // Form1.cs
 using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
+using System.Numerics;
 using System.Windows.Forms;
 
 namespace CheckersFormsApp
@@ -84,7 +86,7 @@ namespace CheckersFormsApp
                     button.Height = 40;
                     button.Top = i * 40;
                     button.Left = j * 40;
-                    
+                    button.Tag = i * BoardSize + j;
                     string symbol = Board[i][j];
                     button.Text = symbol;
 
@@ -120,6 +122,9 @@ namespace CheckersFormsApp
                 // Reset selected position for the next move
                 selectedRow = -1;
                 selectedCol = -1;
+
+                //switch to next player
+                SwitchPlayers();
             }
         }
         private bool IsValidPieceToSelect(int row, int col)
@@ -188,6 +193,7 @@ namespace CheckersFormsApp
             if (IsValidMove(fromRow, fromCol, toRow, toCol, piece))
             {
                 // Perform the move
+                MessageBox.Show("Thing running");
                 Board[toRow][toCol] = piece;
                 Board[fromRow][fromCol] = " "; // Assuming an empty space after moving
 
@@ -208,7 +214,7 @@ namespace CheckersFormsApp
                 }
 
                 // Update UI based on the game state
-                UpdateUI();
+                UpdateUI(toRow, toCol, piece);
             }
             else
             {
@@ -217,23 +223,47 @@ namespace CheckersFormsApp
             }
         }
 
-
-        private void UpdateUI()
+        private void UpdateUI(int toRow, int toCol, string piece)
         {
-            // Implement UI update logic based on the game state
-            // For example: Refresh the buttons to reflect the updated Board
-            Refresh();
+            MessageBox.Show("Update UI running");
+            for (int i = 0; i < BoardSize; i++)
+            {
+                for (int j = 0; j < BoardSize; j++)
+                {
+                    Button button = GetButton(i, j);
+                    if (button != null)
+                    {
+                        button.Text = Board[i][j];
+                    }
+                }
+            }
+        }
+        private Button GetButton(int row, int col)
+        {
+            foreach (Control control in Controls)
+            {
+                if (control is Button button && (int)button.Tag == row * 8 + col)
+                {
+                    return button;
+                }
+            }
+            return null;
         }
 
         private void SetFormSize()
         {
-            int formWidth = 8*40;
-            int formHeight = 8*40;
+            int formWidth = 8 * 40;
+            int formHeight = 8 * 40;
 
             MaximizeBox = false;
             ClientSize = new Size(formWidth, formHeight);
             FormBorderStyle = FormBorderStyle.FixedSingle; // Prevent resizing
         }
+        private void SwitchPlayers()
+        {
+            CurrentPlayer = (CurrentPlayer == Player.X) ? Player.O : Player.X;
+        }
+
+
     }
 }
-
