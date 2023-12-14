@@ -189,6 +189,11 @@ namespace CheckersFormsApp
                     return true;
                 }
             }
+            if (IsKing(piece) && Math.Abs(toRow - fromRow) == 1 && Math.Abs(toCol - fromCol) == 1)
+            {
+                // King can move diagonally backwards
+                return true;
+            }
 
             return false; // If none of the conditions are met, the move is invalid
         }
@@ -221,6 +226,7 @@ namespace CheckersFormsApp
                     Board[toRow][toCol] = piece.ToUpper();
                 }
 
+
                 // Update UI based on the game state
                 UpdateUI(toRow, toCol, piece);
             }
@@ -229,6 +235,12 @@ namespace CheckersFormsApp
                 // Handle invalid move (e.g., show a message to the player)
                 Console.WriteLine("Invalid move!");
             }
+        }
+
+        private bool IsKing(string piece)
+        {
+            // Check if the piece is a king (assumed that kings are represented by uppercase letters)
+            return piece == piece.ToUpper();
         }
 
         private void UpdateUI(int toRow, int toCol, string piece)
