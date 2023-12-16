@@ -9,14 +9,14 @@ namespace CheckersFormsApp
 {
     public enum Player
     {
-        X,
-        O
+        x,
+        o
     }
     public partial class Form1 : Form
     {
         private int selectedRow = -1;
         private int selectedCol = -1;
-        private Player CurrentPlayer = Player.X;
+        private Player CurrentPlayer = Player.x;
         private const int ButtonSize = 40;
         private const int BoardSize = 8;
         private CheckersGame checkersGame;
@@ -46,30 +46,30 @@ namespace CheckersFormsApp
                 Board.Add(row);
             }
 
-            Board[0][1] = "X";
-            Board[0][3] = "X";
-            Board[0][5] = "X";
-            Board[0][7] = "X";
-            Board[1][0] = "X";
-            Board[1][2] = "X";
-            Board[1][4] = "X";
-            Board[1][6] = "X";
-            Board[2][1] = "X";
-            Board[2][3] = "X";
-            Board[2][5] = "X";
-            Board[2][7] = "X";
-            Board[5][0] = "O";
-            Board[5][2] = "O";
-            Board[5][4] = "O";
-            Board[5][6] = "O";
-            Board[6][1] = "O";
-            Board[6][3] = "O";
-            Board[6][5] = "O";
-            Board[6][7] = "O";
-            Board[7][0] = "O";
-            Board[7][2] = "O";
-            Board[7][4] = "O";
-            Board[7][6] = "O";
+            Board[0][1] = "x";
+            Board[0][3] = "x";
+            Board[0][5] = "x";
+            Board[0][7] = "x";
+            Board[1][0] = "x";
+            Board[1][2] = "x";
+            Board[1][4] = "x";
+            Board[1][6] = "x";
+            Board[2][1] = "x";
+            Board[2][3] = "x";
+            Board[2][5] = "x";
+            Board[2][7] = "x";
+            Board[5][0] = "o";
+            Board[5][2] = "o";
+            Board[5][4] = "o";
+            Board[5][6] = "o";
+            Board[6][1] = "o";
+            Board[6][3] = "o";
+            Board[6][5] = "o";
+            Board[6][7] = "o";
+            Board[7][0] = "o";
+            Board[7][2] = "o";
+            Board[7][4] = "o";
+            Board[7][6] = "o";
         }
 
         private void InitializeBoardButtons()
@@ -131,7 +131,7 @@ namespace CheckersFormsApp
         private bool IsOpponentPiece(string piece1, string piece2)
         {
             // Assuming "X" and "O" represent the two players
-            return (piece1 == "X" && piece2 == "O") || (piece1 == "O" && piece2 == "X");
+            return (piece1 == "x" && piece2 == "o") || (piece1 == "o" && piece2 == "x");
         }
 
         private bool IsValidPieceToSelect(int row, int col)
@@ -146,7 +146,7 @@ namespace CheckersFormsApp
             string piece = Board[row][col];
 
             // Assuming "X" and "O" represent the two players
-            if ((piece == "X" && CurrentPlayer == Player.X) || (piece == "O" && CurrentPlayer == Player.O))
+            if ((piece == "x" && CurrentPlayer == Player.x) || (piece == "o" && CurrentPlayer == Player.o))
             {
                 return true;
             }
@@ -160,44 +160,69 @@ namespace CheckersFormsApp
             {
                 return false;
             }
-
+            
+            
+            
             // Check if the destination is empty
             if (Board[toRow][toCol] != " ")
             {
                 return false;
             }
 
-            // Check if it's a regular move (diagonal)
             if (Math.Abs(toRow - fromRow) == 1 && Math.Abs(toCol - fromCol) == 1)
             {
                 // Regular move is valid
-                return true;
+                //checks not backwards
+                if (!isKing(piece) && (piece == "x" && toRow - fromRow < 0 || piece == "o" && fromRow - toRow < 0))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
 
             // Check if it's a capture move (jump)
             if (Math.Abs(toRow - fromRow) == 2 && Math.Abs(toCol - fromCol) == 2)
             {
-                // Calculate the position of the captured piece
-                int capturedRow = (toRow + fromRow) / 2;
-                int capturedCol = (toCol + fromCol) / 2;
-
-                // Check if there is an opponent's piece to capture
-                string capturedPiece = Board[capturedRow][capturedCol];
-                if (IsOpponentPiece(capturedPiece, piece))
+                if (!isKing(piece) && (piece == "x" && toRow - fromRow < 0 || piece == "o" && fromRow - toRow < 0))
                 {
-                    // Capture move is valid
-                    return true;
+                    return false;
                 }
-            }
-            if (IsKing(piece) && Math.Abs(toRow - fromRow) == 1 && Math.Abs(toCol - fromCol) == 1)
-            {
-                // King can move diagonally backwards
-                return true;
+                else
+                {
+                    // Calculate the position of the captured piece
+                    int capturedRow = (toRow + fromRow) / 2;
+                    int capturedCol = (toCol + fromCol) / 2;
+
+                    // Check if there is an opponent's piece to capture
+                    string capturedPiece = Board[capturedRow][capturedCol];
+                    if (IsOpponentPiece(capturedPiece, piece))
+                    {
+                        // Capture move is valid
+                        return true;
+                    }
+                }
+                
             }
 
             return false; // If none of the conditions are met, the move is invalid
         }
 
+        private bool isKing(string piece)
+        {
+            MessageBox.Show("IsKing running");
+            char character = char.Parse(piece);
+            if (char.IsLower(character) == false)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         private void PerformMove(int fromRow, int fromCol, int toRow, int toCol)
         {
             string piece = Board[fromRow][fromCol];
@@ -218,15 +243,11 @@ namespace CheckersFormsApp
                     int capturedCol = (toCol + fromCol) / 2;
                     Board[capturedRow][capturedCol] = " ";
                 }
-
-                // Check if the piece becomes a king
-                if ((piece == "X" && toRow == 8 - 1) || (piece == "O" && toRow == 0))
+                if ((piece == "x" && toRow == 8 - 1) || (piece == "o" && toRow == 0))
                 {
                     // Convert the piece to a king
                     Board[toRow][toCol] = piece.ToUpper();
                 }
-
-
                 // Update UI based on the game state
                 UpdateUI(toRow, toCol, piece);
             }
@@ -235,12 +256,6 @@ namespace CheckersFormsApp
                 // Handle invalid move (e.g., show a message to the player)
                 Console.WriteLine("Invalid move!");
             }
-        }
-
-        private bool IsKing(string piece)
-        {
-            // Check if the piece is a king (assumed that kings are represented by uppercase letters)
-            return piece == piece.ToUpper();
         }
 
         private void UpdateUI(int toRow, int toCol, string piece)
@@ -281,7 +296,7 @@ namespace CheckersFormsApp
         }
         private void SwitchPlayers()
         {
-            CurrentPlayer = (CurrentPlayer == Player.X) ? Player.O : Player.X;
+            CurrentPlayer = (CurrentPlayer == Player.x) ? Player.o : Player.x;
         }
 
 
