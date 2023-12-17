@@ -99,7 +99,6 @@ namespace CheckersFormsApp
         private void HandleButtonClick(int row, int col)
         {
             // Assuming Board is a List<List<string>> or similar
-            MessageBox.Show($"Button clicked: Row {row}, Col {col}", "Your Move");
 
             if (selectedRow == -1 && selectedCol == -1)
             {
@@ -150,7 +149,10 @@ namespace CheckersFormsApp
             {
                 return true;
             }
-
+            if ((piece == "X" && CurrentPlayer == Player.x) || (piece == "O" && CurrentPlayer == Player.o))
+            {
+                return true;
+            }
             return false;
         }
         private bool IsValidMove(int fromRow, int fromCol, int toRow, int toCol, string piece)
@@ -160,8 +162,6 @@ namespace CheckersFormsApp
             {
                 return false;
             }
-            
-            
             
             // Check if the destination is empty
             if (Board[toRow][toCol] != " ")
@@ -203,6 +203,7 @@ namespace CheckersFormsApp
                         // Capture move is valid
                         return true;
                     }
+                    
                 }
                 
             }
@@ -212,7 +213,6 @@ namespace CheckersFormsApp
 
         private bool isKing(string piece)
         {
-            MessageBox.Show("IsKing running");
             char character = char.Parse(piece);
             if (char.IsLower(character) == false)
             {
@@ -231,7 +231,6 @@ namespace CheckersFormsApp
             if (IsValidMove(fromRow, fromCol, toRow, toCol, piece))
             {
                 // Perform the move
-                MessageBox.Show("Thing running");
                 Board[toRow][toCol] = piece;
                 Board[fromRow][fromCol] = " "; // Assuming an empty space after moving
 
@@ -260,7 +259,6 @@ namespace CheckersFormsApp
 
         private void UpdateUI(int toRow, int toCol, string piece)
         {
-            MessageBox.Show("Update UI running");
             for (int i = 0; i < BoardSize; i++)
             {
                 for (int j = 0; j < BoardSize; j++)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheckersFormsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d714cb5cf589f5a4c36f32cc25279275dd98aece")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00065785ba43975a6424baa9f7b8f972d1fef163")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheckersFormsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheckersFormsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
